@@ -1,7 +1,7 @@
 `anova_lm` <- function (object, ...) 
 {
     if (length(list(object, ...)) > 1L) 
-        return(anova.lmlist(object, ...))
+        return(stats:::anova.lmlist(object, ...))
     if (!inherits(object, "lm")) 
         warning("calling anova.lm(<fake-lm-object>) ...")
     w <- object$weights
