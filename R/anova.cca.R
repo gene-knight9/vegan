@@ -63,7 +63,7 @@
     ## because 'permutations' already is a permutationMatrix
     tst <- permutest.cca2(object, permutations = permutations,
                          model = model, parallel = parallel, ...)
-    print(tst)
+    #print(tst)
     Fval <- c(tst$F.0, NA)
     Pval <- (sum(tst$F.perm >= tst$F.0 - EPS) + 1)/(tst$nperm + 1)
     Pval <- c(Pval, NA)
